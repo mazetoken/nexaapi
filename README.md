@@ -1,0 +1,2 @@
+# nexapi
+Nexa blockchain API
