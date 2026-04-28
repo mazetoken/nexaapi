@@ -5,11 +5,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Nexa API High-performance blockchain data API">
-    <meta name="web" content="https://nexapi.nota.deno.net/">
+    <meta name="description" content="Nexa High-performance blockchain data API">
+    <meta name="web" content="https://nexaapi.up.raliway.app">
     <meta property="og:title" content="Nexa API">
-    <meta property="og:description" content="Nexa API High-performance blockchain data API">
-    <title>Nexa API</title>
+    <meta property="og:description" content="Nexa High-performance blockchain data API">
+    <title>NEXA API</title>
+    <link rel="icon" type="image/png" href="./nexa-logo-mark.png" width="32">
+    <!-- Optional: For Apple devices -->
+    <link rel="apple-touch-icon" href="./nexa-logo-mark.png" width="64">
     <style>
         * {
             margin: 0;
@@ -171,7 +174,7 @@
             font-size: 14px;
         }
 
-        @media (max-width: 768px) {
+        @media (max-width: 700px) {
             body {
                 padding: 15px;
             }
@@ -195,18 +198,17 @@
 <body>
     <div class="container">
         <header>
-            <h1 style="display: flex; align-items: center; gap: 8px;"><img src="./nexa-logo-mark.png" alt="Nexa"
-                    width="64">NEXA API</h1>
+            <h1 style="display: flex; align-items: center; gap: 8px;"><img src="./nexa-logo-mark.png" alt="Nexa" width="64">NEXA API</h1>
             <p class="subtitle">High-performance blockchain data API with caching.</p>
         </header>
         <div class="info-box">
             <h3>API Information</h3>
-            <p>This API provides access to <a href="https://nexa.org">Nexa</a> blockchain data through optimized Electrum server connections
-                utilizing <a href="https://nexa.gitlab.io/rostrum/">Rostrum</a> protocol methods. We acknowledge and sincerely appreciate the operators of public
-                Rostrum servers, whose ongoing maintenance and contributions play an essential role in enabling this
-                service. Users are kindly reminded to access this service responsibly, ensuring that their usage does not place
-                undue load on public infrastructure or negatively impact the broader community.
+            <p>This API provides access to <a href="https://nexa.org" style="color:var(--accent);text-decoration:underline">Nexa</a>
+                blockchain data through optimized Electrum server connections utilizing <a href="https://nexa.gitlab.io/rostrum/" style="color:var(--accent);text-decoration:underline">Rostrum</a>
+                protocol methods. We acknowledge and sincerely appreciate the operators of public Rostrum servers, whose ongoing maintenance and contributions play an essential role in enabling this service.
+                Users are kindly reminded to access this service responsibly, ensuring that their usage does not place undue load on public infrastructure or negatively impact the broader community.
             </p>
+            <p>Check out <a href="https://nexatx.up.railway.app" style="color:var(--accent);text-decoration:underline">NEXA TX VISUALIZER</a></p>
             <ul>
                 <li>Intelligent caching for improved performance</li>
                 <li>Request deduplication to reduce server load</li>
@@ -291,11 +293,12 @@
                 </div>
 
                 <div class="endpoint-card">
-                    <span class="method get">POST</span>
-                    <div class="endpoint-path">/broadcast/:tx</div>
+                    <span class="method post">POST</span>
+                    <div class="endpoint-path">/broadcast</div>
                     <div class="endpoint-description">Broadcast a signed transaction</div>
-                    <div class="params"><strong>Params:</strong> tx (hex string)</div>
+                    <div class="params"><strong>Body:</strong> { "tx": "hex string" }</div>
                 </div>
+
             </div>
         </div>
 
@@ -352,8 +355,12 @@
         </div>
 
         <footer>
-            <p>NexaAPI v.3.0.</p>
-            <p>Fierce UTXO | 2025-2026</p>
+            <span>
+                <p>NEXA API v.1.1.0</p>
+                <p>by >HEY-NOTA FIERCE UTXO | 2024-2026</p>
+                <p>Donations: nexa:nqtsq5g5np26gcu0jpcjhsfwpqlhrq59gceegaxnpz20kmcy</p>
+                <p>Deployed on <a href="https://railway.com?referralCode=nJxTsJ" style="color:var(--accent);text-decoration:underline">RAILWAY</a></p>
+            </span>
         </footer>
     </div>
 </body>
