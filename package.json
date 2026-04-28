@@ -1,0 +1,16 @@
+{
+  "name": "nexaapi",
+  "version": "1.1.0",
+  "description": "Nexa API High-performance blockchain data API",
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@vgrunner/electrum-cash": "^3.0.0"
+  }
+}
